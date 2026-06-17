@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock AI Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>📊 Stock Market AI Predictor</h1>
+        <p>Predict future stock prices using LSTM Neural Network</p>
+    </div>
+
+    <div class="card">
+
+        <form action="/predict" method="post">
+            <label>Enter last 50 OPEN prices (comma separated)</label>
+
+            <textarea name="values" placeholder="Example: 67.71, 68.40, 66.89 ..."></textarea>
+
+            <button type="submit">Predict Price</button>
+        </form>
+
+        {% if prediction_text %}
+        <div class="result">
+            {{ prediction_text }}
+        </div>
+        {% endif %}
+
+    </div>
+
+    <div class="footer">
+        <p>AI Model: LSTM Neural Network | Built with Flask</p>
+    </div>
+
+</div>
+
+</body>
+</html>
