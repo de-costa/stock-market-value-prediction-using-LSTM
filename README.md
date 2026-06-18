@@ -3,6 +3,14 @@
 A Deep learning web application that predicts stock prices using an **LSTM neural network** and displays results through a **Flask-based web dashboard** with visualization support.
 
 ---
+## 🚀 Live Demo / UI Preview
+
+![Web UI](static/ui.png)
+
+> 🧠 The web interface allows users to input stock data and get predicted values instantly.
+
+---
+
 
 ## 🚀 Features
 
