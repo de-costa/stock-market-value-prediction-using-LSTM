@@ -10,6 +10,31 @@ A Deep learning web application that predicts stock prices using an **LSTM neura
 > 🧠 The web interface allows users to input stock data and get predicted values instantly.
 
 ---
+## 📈 Dataset Overview (Open Price Trend)
+
+![Open Price Graph](static/open_values.png)
+
+> This graph shows historical **AAPL open price variation** used for training the model.
+
+---
+## 🧠 Model Training Performance
+
+### 📉 Loss vs Epochs
+
+![Loss Graph](static/train_loss.png)
+
+> The model was trained using LSTM with MSE loss function. The graph shows convergence over epochs.
+
+---
+## 📊 Prediction Results
+
+### 📈 Actual vs Predicted Stock Prices
+
+![Prediction Graph](static/test_vs_predicted.png)
+
+> Comparison between real stock prices and model predictions on test data.
+
+---
 
 
 ## 🚀 Features
